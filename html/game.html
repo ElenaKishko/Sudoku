@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku-Elena</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+        
+    <h1>Sudoku Game</h1>
+    <table class="mainTable">
+        <tr>
+            <td>
+                <table>
+                    <tr class="a">
+                        <td class="cell"><input type="text" id="a1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="a2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="a3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="b">
+                        <td class="cell"><input type="text" id="b1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="b2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="b3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="c">
+                        <td class="cell"><input type="text" id="c1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="c2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="c3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr class="a">
+                        <td class="cell"><input type="text" id="a4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="a5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="a6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="b">
+                        <td class="cell"><input type="text" id="b4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="b5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="b6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="c">
+                        <td class="cell"><input type="text" id="c4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="c5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="c6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr class="a">
+                        <td class="cell"><input type="text" id="a7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="a8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="a9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="b">
+                        <td class="cell"><input type="text" id="b7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="b8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="b9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="c">
+                        <td class="cell"><input type="text" id="c7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="c8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="c9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr class="d">
+                        <td class="cell"><input type="text" id="d1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="d2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="d3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="e">
+                        <td class="cell"><input type="text" id="e1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="e2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="e3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="f">
+                        <td class="cell"><input type="text" id="f1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="f2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="f3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr class="d">
+                        <td class="cell"><input type="text" id="d4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="d5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="d6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="e">
+                        <td class="cell"><input type="text" id="e4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="e5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="e6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="f">
+                        <td class="cell"><input type="text" id="f4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="f5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="f6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr class="d">
+                        <td class="cell"><input type="text" id="d7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="d8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="d9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="e">
+                        <td class="cell"><input type="text" id="e7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="e8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="e9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="f">
+                        <td class="cell"><input type="text" id="f7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="f8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="f9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr class="g">
+                        <td class="cell"><input type="text" id="g1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="g2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="g3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="h">
+                        <td class="cell"><input type="text" id="h1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="h2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="h3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="i">
+                        <td class="cell"><input type="text" id="i1" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="i2" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="i3" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr class="g">
+                        <td class="cell"><input type="text" id="g4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="g5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="g6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="h">
+                        <td class="cell"><input type="text" id="h4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="h5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="h6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="i">
+                        <td class="cell"><input type="text" id="i4" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="i5" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="i6" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr class="g">
+                        <td class="cell"><input type="text" id="g7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="g8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="g9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="h">
+                        <td class="cell"><input type="text" id="h7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="h8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="h9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                    <tr class="i">
+                        <td class="cell"><input type="text" id="i7" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="i8" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                        <td class="cell"><input type="text" id="i9" maxlength = "1" onkeypress='return event.charCode >= 49 && event.charCode <= 57'></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+   
+    <div id="check">
+        <button id="checkBtn" onclick="checkSudoku()">Complete</button>
+        <button id="checkBtn" onclick="fillAgain()">Again</button>
+        <a href="../index.html"><button id="loginBtn">Main page</button></a>
+    </div>
+
+    <script src="../script/script.js"></script>
+    <script>checkLevelSelection();</script>
+</body>
+</html>

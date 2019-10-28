@@ -1,0 +1,229 @@
+body {
+    background-image: url("backgroundPicture.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    min-width: 700px;
+    margin: auto;
+    font-family: "Book Antiqua";
+}
+
+h1 {
+    text-align: center;
+    color: #84AD00;
+    font-size: 80px;
+    padding-top: 70px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    text-align: center;
+    color: #84AD00;
+    font-size: 50px;
+    margin-bottom: 26px;
+}
+
+.mainTable {
+    text-align: center;
+    display: inline-table;
+}
+
+.cell { 
+    width: 50px; 
+    height: 50px;
+    font-size: 22px;
+    color: #2A5300;
+    background-color: transparent; 
+    border: 2px solid #84AD00;
+    -moz-border-radius: 20px 0px 20px 0px;
+    -webkit-border-radius: 20px 0px 20px 0px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+#fill{
+    padding-top: 20px;
+}
+
+button{
+    border: 2px solid #BACE1C;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    color: #84AD00;
+    font-size: 22px;
+    background-color: transparent;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: "Book Antiqua";
+}
+
+button:hover{
+    background-color: #E8F1BF;   
+}
+table{
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9,
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9,
+#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9,
+#d1,#d2,#d3,#d4,#d5,#d6,#d7,#d8,#d9,
+#e1,#e2,#e3,#e4,#e5,#e6,#e7,#e8,#e9,
+#f1,#f2,#f3,#f4,#f5,#f6,#f7,#f8,#f9,
+#g1,#g2,#g3,#g4,#g5,#g6,#g7,#g8,#g9,
+#h1,#h2,#h3,#h4,#h5,#h6,#h7,#h8,#h9,
+#i1,#i2,#i3,#i4,#i5,#i6,#i7,#i8,#i9{
+    text-align: center;
+    font-size: 24px;
+    width: 50px; 
+    height: 50px;
+    font-size: 22px;
+    color: #2A5300;
+    background-color: transparent; 
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.loginForm{
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    color: #84AD00;
+    font-size: 30px;
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+#userName, #userPassword{
+    font-size: 14px;
+    color: #2A5300;
+    background-color: transparent; 
+    border: 2px solid #84AD00;
+    border-radius: 6px;
+    padding: 5px 5px;
+}
+
+.enterBtn{
+    margin-top: 50px;
+}
+ul{
+    display: inline-block;
+    list-style: none;
+    font-size: 30px;
+    color: #84AD00;
+}
+li{
+    text-align: left;
+}
+
+.wrong {
+    font-size: 14px;
+    color: red;
+    padding-top: 8px;
+    visibility: hidden;
+   
+}
+
+input[type=text]:focus, input[type=password]:focus, button:focus{
+    outline: none;
+}
+
+.loginWrapper{
+    display: flex;
+    width: 700px;
+    margin: auto;
+}
+
+.userInput{
+    display: inline-grid;
+    text-align: initial;
+}
+
+.levelSelector{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.selectorList{
+    display: initial;
+    margin: 10px 0 0 0;
+    padding: 0px;
+    display: block;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 26px;
+    color: #84AD00;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  input[type=radio]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 20px;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #84AD00;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+p {
+    display: none;
+}

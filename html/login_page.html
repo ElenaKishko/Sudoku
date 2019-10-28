@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku-Elena</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+    <h1>User login</h1>
+    <div class="loginWrapper">
+        <div class="loginForm">
+            <label for="userName">User:</label>
+            <div class="userInput">
+                <input type="text" id="userName" placeholder="User name">               
+                <label class="wrong" id="InvalidUsename">*Invalid user name</label>
+            </div>
+        </div>
+        <div class="loginForm">
+            <label for="userPassword">Password:</label>           
+            <div class="userInput">
+                <input type="password" id="userPassword" placeholder="Password">
+                <label class="wrong" id="invalidPassword">*Invalid password</label>
+            </div>
+        </div>
+    </div>
+    <div class="enterBtn">
+        <button onclick="checkUserCredentials()">Enter</button>
+        <a href="../index.html"><button id="loginBtn">Main page</button></a>
+    </div>
+    
+    <script src="../script/script.js"></script>
+</body>
+</html>

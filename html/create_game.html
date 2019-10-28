@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku-Elena</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+</head>
+<body>
+    <!-- <h1>Create a game</h1> -->
+    <h1>Welcome abcd</h1>
+    <div class="levelSelector">
+    <h2>Choose level:</h2>
+        <label class="container">Easy
+        <input type="radio"  name="level" value="easy" id="easy" onclick="setLevel(1)">
+        <span class="checkmark"></span>
+        </label>
+        
+        <label class="container">Medium
+        <input type="radio" name="level" value="medium" id="medium" onclick="setLevel(2)">
+        <span class="checkmark"></span>
+        </label>
+        
+        <label class="container">Hard
+        <input type="radio" name="level" value="hard" id="hard" onclick="setLevel(3)">
+        <span class="checkmark"></span>
+        </label>
+    </div>
+
+    <div>
+        <button id="playBtn" onclick="uncheck()">Play</button>
+        <a href="../index.html"><button id="loginBtn">Main page</button></a>
+    </div>
+    
+    <p id='level'>0</p>
+    
+    <script src="../script/create_game.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+</html>
